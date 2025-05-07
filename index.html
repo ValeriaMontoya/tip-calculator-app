@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a solution to the Tip calculator app challenge on Frontend Mentor.">
+  <meta name="keywords" content="Frontend Mentor, HTML, CSS, JavaScript">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/main.css">
+  <script defer src="/js/script.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <img src="/assets/images/logo.svg" alt="Splitter logo" class="header__logo">
+  </header>
+
+  <main class="calculator">
+    <form class="calculator__form">
+      <section class="calculator__inputs">
+        <div class="calculator__bill">
+          <label for="bill-amount" class="calculator__label">Bill</label>
+          <input class="calculator__input no-arrows" type="number" name="amount" id="bill-amount" placeholder="0"
+            min="1" aria-label="Bill amount">
+        </div>
+
+        <div class="tip-selector">
+          <label for="custom" class="calculator__label">Select Tip %</label>
+          <div class="tip-selector__grid" id="tip-selector">
+            <button type="button" class="tip-selector__btn tip-selector__btn--5">5%</button>
+            <button type="button" class="tip-selector__btn tip-selector__btn--10">10%</button>
+            <button type="button" class="tip-selector__btn tip-selector__btn--15">15%</button>
+            <button type="button" class="tip-selector__btn tip-selector__btn--25">25%</button>
+            <button type="button" class="tip-selector__btn tip-selector__btn--50">50%</button>
+            <input class="tip-selector__custom no-arrows" type="number" name="custom-tip" id="custom"
+              placeholder="Custom" min="0" max="100" step="1" aria-label="Custom tip percentage">
+          </div>
+        </div>
+
+        <div class="calculator__people">
+          <div class="calculator__label-wrapper">
+            <label for="people-amount" class="calculator__label">Number of People</label>
+            <span class="calculator__error">Can't be zero</span>
+          </div>
+          <input class="calculator__input no-arrows" type="number" name="number-people" id="people-amount"
+            placeholder="0" required min="1" max="100" step="1" aria-label="Number of people">
+        </div>
+      </section>
+
+      <section class="calculator__results">
+        <div>
+          <div class="result-display">
+            <div>
+              <p class="result-display__label">Tip Amount</p>
+              <p class="result-display__per-person">/ person</p>
+            </div>
+            <p class="result-display__amount" id="tip-per-person">$0.00</p>
+          </div>
+
+          <div class="result-display">
+            <div>
+              <p class="result-display__label">Total</p>
+              <p class="result-display__per-person">/ person</p>
+            </div>
+            <p class="result-display__amount" id="total-per-person">$0.00</p>
+          </div>
+        </div>
+
+        <button type="reset" class="calculator__reset-btn" id="reset-btn" disabled>Reset</button>
+      </section>
+    </form>
+  </main>
+</body>
+
+</html>
