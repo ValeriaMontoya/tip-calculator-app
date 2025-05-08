@@ -18,7 +18,7 @@ numberOfPeopleInput.addEventListener('input', handlePeopleInput);
 customTipInput.addEventListener('input', handleCustomTip);
 resetButton.addEventListener('click', resetCalculator);
 
-tipButtons.forEach((tipButton) => {
+tipButtons.forEach(tipButton => {
   tipButton.addEventListener('click', () => {
     currentTipPercent =
       parseFloat(tipButton.textContent.replace('%', '')) / 100;
@@ -76,7 +76,7 @@ function calculateTotals() {
 }
 
 function clearActiveButtons() {
-  tipButtons.forEach((button) => button.classList.remove('active'));
+  tipButtons.forEach(button => button.classList.remove('active'));
 }
 
 function updateActiveButton(selectedButton) {
