@@ -1,0 +1,45 @@
+@import url("https://api.fonts.coollabs.io/css2?family=Space+Mono:wght@700&display=swap");
+
+/* =================
+  Typography
+================= */
+$font-family: "Space Mono", monospace;
+$font-weight: 700;
+// Font size (form inputs): 24px
+
+/* =================
+  Colors
+================= */
+$black: rgb(0 0 0);
+$white: rgb(255 255 255);
+$green-200: rgb(159 232 223);
+$green-400: rgb(38 194 174);
+$green-750: rgb(13 104 109);
+$green-800: rgb(8 92 97);
+$green-900: rgb(0 71 75);
+$grey-200: rgb(197 228 231);
+$grey-300: rgb(158 187 189);
+$grey-400: rgb(127 157 159);
+$grey-50: rgb(243 249 250);
+$grey-500: rgb(94 122 125);
+$grey-550: rgb(84 120 120);
+$grey-600: rgb(61 102 102);
+$orange-400: rgb(225 112 82);
+
+/* =================
+  Spacing
+================= */
+$spacing-0: 0rem;
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-600: 3rem;
+$spacing-1000: 5rem;
+$spacing-1200: 6rem;
+$spacing-1500: 7.5rem;
+$spacing-1600: 8rem;
+$spacing-2000: 10rem;
+$spacing-3000: 15rem;
+$spacing-4000: 20rem;
